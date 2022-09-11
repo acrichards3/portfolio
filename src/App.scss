@@ -1,0 +1,9 @@
+@import './Variables.scss';
+
+body {
+  background-color: $backgroundApp;
+  font-family: $mainFont;
+  color: lightgrey;
+  margin: 0;
+  padding: 0;
+}
