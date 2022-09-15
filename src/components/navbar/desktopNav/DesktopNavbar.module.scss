@@ -1,2 +1,39 @@
 @import '../../../Variables.scss';
 
+.container {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  background-color: $backgroundApp;
+  padding: 25px;
+}
+
+.navItem {
+  text-decoration: none;
+  background-color: $backgroundApp;
+  font-size: xx-large;
+  border: none;
+  font-family: $mainFont, sans-serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  justify-content: space-between;
+  font-size: large;
+  color: white !important;
+  transition: 200ms;
+  a {
+    color: white;
+    font-size: 25px;
+    transition: 200ms;
+  }
+  a:hover {
+    color: lightgrey;
+  }
+}
+
+.activeNavItem {
+  @extend.navItem;
+  a {
+      color: #0266cc !important;
+      font-size: 27px !important;
+  }
+}

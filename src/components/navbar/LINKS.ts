@@ -1,8 +1,14 @@
-export const LINKS = [
+interface Link {
+    id: number;
+    name: string;
+    url: string;
+}
+
+export const LINKS: Link[] = [
   {
     id: 0,
     name: 'Home',
-    url: '/home',
+    url: '/',
   },
   {
     id: 1,

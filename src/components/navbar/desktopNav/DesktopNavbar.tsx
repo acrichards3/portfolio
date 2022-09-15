@@ -7,23 +7,22 @@ export default function DesktopNavbar() {
   const [active, setActive] = useState(0);
 
   const returnLinks = () => {
-    return LINKS.map(link => {
+    return LINKS.map((link) => {
       return (
-        <Link
-        to={link.url}
-        className={styles.link}
-        key={link.id}
-        onClick={() => setActive(link.id)}
-        >
-        {link.name}
-        </Link>
+        <button className={ active === link.id ? styles.activeNavItem : styles.navItem}>
+          <Link
+            to={link.url}
+            className={styles.link}
+            key={link.id}
+            style={{ textDecoration: 'none'}}
+            onClick={() => setActive(link.id)}
+          >
+            {link.name}
+          </Link>
+        </button>
       );
-    })
-  }
+    });
+  };
 
-  return (
-    <div className={styles.navbar}>
-      {returnLinks()}
-    </div>
-  )
+  return <div className={styles.container}>{returnLinks()}</div>;
 }
