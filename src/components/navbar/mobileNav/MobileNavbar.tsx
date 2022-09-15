@@ -8,20 +8,17 @@ export default function MobileNavbar() {
   const [active, setActive] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 
-  const menuOpen = () => {
+  const menuOpen = (isOpen: boolean) => {
     if (isOpen) {
-        return (
-          <div className={styles.menuOpen}>
-            <div>
-              <button
-                onClick={() => setIsOpen(false)}
-                className={styles.menuBtn}
-              >
-                <Icon icon="menu-closed" size={30} />
-              </button>
-            </div>
+      return (
+        <div className={styles.menuOpen}>
+          <div>
+            <button onClick={() => setIsOpen(false)} className={styles.menuBtn}>
+              <Icon icon="menu-closed" size={30} />
+            </button>
           </div>
-        );
+        </div>
+      );
     }
 
     return (
@@ -29,27 +26,34 @@ export default function MobileNavbar() {
         <Icon icon="menu" size={30} />
       </button>
     );
-  }
-
-  const returnLinks = () => {
-    return LINKS.map((link) => {
-      return (
-        <button
-          className={active === link.id ? styles.activeNavItem : styles.navItem}
-        >
-          <Link
-            to={link.url}
-            className={styles.link}
-            key={link.id}
-            style={{ textDecoration: 'none' }}
-            onClick={() => setActive(link.id)}
-          >
-            {link.name}
-          </Link>
-        </button>
-      );
-    });
   };
 
-  return <div className={styles.container}>{returnLinks()}</div>;
+  const currentlyOpen = (open: boolean) => {
+    if (open) {
+      return (
+        <div className={styles.menuOpen}>
+          {LINKS.map((link) => {
+            return (
+              <Link
+                to={link.url}
+                key={link.id}
+                style={{ textDecoration: 'none' }}
+                className={active === link.id ? styles.active : styles.link}
+                onClick={() => setActive(link.id)}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
+        </div>
+      );
+    }
+  };
+
+  return (
+  <div className={styles.container}>
+    <div className={styles.menu}>{menuOpen(isOpen)}</div>
+    <div>{currentlyOpen(isOpen)}</div>
+  </div>
+  );
 }
