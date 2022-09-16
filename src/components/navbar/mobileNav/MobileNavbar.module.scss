@@ -1,41 +1,38 @@
 @import '../../../Variables.scss';
 
-@import '../../../Variables.scss';
-
 .container {
   display: flex;
-  justify-content: center;
-  position: sticky;
-  background-color: $backgroundApp;
-  padding: 25px;
+  flex-direction: column;
+  background-color: $openNav;
+}
+
+.menuBtn {
+  background-color: $openNav;
+  padding: 20px;
+  border: none;
+  fill: white;
+  transition: 200ms;
+}
+.menuBtn:hover {
+  fill: lightgrey;
+  cursor: pointer;
 }
 
 .navItem {
-  text-decoration: none;
-  background-color: $backgroundApp;
-  font-size: xx-large;
-  border: none;
-  font-family: $mainFont, sans-serif;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  justify-content: space-between;
-  font-size: large;
-  color: white !important;
+  margin-left: 20px;
+  margin-bottom: 20px;
   transition: 200ms;
-  a {
-    color: white;
-    font-size: 25px;
-    transition: 200ms;
-  }
-  a:hover {
-    color: lightgrey;
-  }
+  color: white;
+  font-size: 30px;
+  font-family: $mainFont;
+  letter-spacing: 2px;
+}
+.navItem:hover {
+  color: lightgrey;
 }
 
 .activeNavItem {
   @extend.navItem;
-  a {
-      color: #0266cc !important;
-      font-size: 27px !important;
-  }
+  margin-left: 30px;
+  color: $siteBlue !important;
 }

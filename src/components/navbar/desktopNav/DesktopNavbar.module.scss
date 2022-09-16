@@ -33,7 +33,7 @@
 .activeNavItem {
   @extend.navItem;
   a {
-      color: #0266cc !important;
+      color: $siteBlue !important;
       font-size: 27px !important;
   }
 }
