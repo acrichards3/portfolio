@@ -11,7 +11,7 @@ export default function DetermineNavbar() {
     }, []);
 
 
-  if (window.screen.width < 768 || width < breakpoint) {
+  if (window.screen.width < breakpoint || width < breakpoint) {
     return <MobileNavbar />;
   }
 
