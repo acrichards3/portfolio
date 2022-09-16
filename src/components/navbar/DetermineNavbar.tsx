@@ -10,5 +10,10 @@ export default function DetermineNavbar() {
         window.addEventListener('resize', () => setWidth(window.innerWidth));
     }, []);
 
-  return width < breakpoint ? <MobileNavbar /> : <DesktopNavbar />;
+
+  if (window.screen.width < 768 || width < breakpoint) {
+    return <MobileNavbar />;
+  }
+
+  return <DesktopNavbar />;
 }
