@@ -1,10 +1,12 @@
 import React from 'react';
+import me from '../../images/me.jpg';
 import styles from './Home.module.scss';
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.titleName}>Alex Richards</h1>
+      <img src={me} alt="Profile" className={styles.profilePic} />
+      <h1 className={styles.title}>Hello, I'm Alex</h1>
     </div>
   );
 }

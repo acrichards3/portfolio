@@ -2,13 +2,25 @@
 
 .container {
     display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+    justify-content: left;
+    margin-top: 3rem;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-.titleName {
-    color: white;
-    letter-spacing: 20px;
-    font-size: 80px;
+.profilePic {
+    display: flex;
+    justify-content: left;
+    float: left;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid;
+    margin-right: 10%;
+}
+
+.title {
     font-weight: bold;
+    font-size: 50px;
+    color: white;
 }
