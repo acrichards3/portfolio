@@ -1,26 +1,29 @@
-@import "../../Variables.scss";
+@import '../../Variables.scss';
 
-.container {
+@media (max-width: $breakpoint) {
+  .container {
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 3rem;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.profilePic {
-    display: flex;
-    justify-content: left;
-    float: left;
-    width: 300px;
-    height: 300px;
+  }
+  .profilePic {
+    width: 40%;
+    height: 40%;
     border-radius: 50%;
     border: 3px solid;
-    margin-right: 10%;
-}
+  }
 
-.title {
+  .title {
     font-weight: bold;
     font-size: 50px;
     color: white;
+  }
+
+  .socialIcons {
+    .icon {
+        
+    }
+  }
 }

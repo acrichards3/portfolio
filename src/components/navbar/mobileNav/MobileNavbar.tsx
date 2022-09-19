@@ -14,7 +14,7 @@ export default function MobileNavbar() {
         <div className={styles.menuOpen}>
           <div>
             <button onClick={() => setIsOpen(false)} className={styles.menuBtn}>
-              <Icon icon="menu-open" size={120} />
+              <Icon icon="menu-open" size={40} />
             </button>
           </div>
         </div>
@@ -23,7 +23,7 @@ export default function MobileNavbar() {
 
     return (
       <button onClick={() => setIsOpen(true)} className={styles.menuBtn}>
-        <Icon icon="menu" size={120} />
+        <Icon icon="menu" size={40} />
       </button>
     );
   };
