@@ -21,9 +21,25 @@
     color: white;
   }
 
+  .subtitle {
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+
+  .introBody {
+    font-family: $mainFont;
+    font-size: 12pt !important;
+    color: white;
+    font-size: 10pt;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .socialIcons {
+    margin-top: 20px;
     .icon {
-        
+      margin-left: 25px;
+      margin-right: 25px;
     }
   }
 }
