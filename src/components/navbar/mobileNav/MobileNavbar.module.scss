@@ -3,6 +3,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
   background-color: $openNav;
 }
 
@@ -10,6 +11,7 @@
   background-color: $openNav;
   padding: 20px;
   border: none;
+  color: white;
   fill: white;
   transition: 200ms;
 }

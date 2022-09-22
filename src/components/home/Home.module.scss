@@ -6,8 +6,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     margin-top: 2rem;
+
+    .socialIcons {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
   }
+  
   .profilePic {
     width: 40%;
     height: 40%;
@@ -24,7 +34,15 @@
 
   .subtitle {
     font-style: italic;
+    color: lightskyblue;
     letter-spacing: 1px;
+  }
+
+  .contact {
+    letter-spacing: 2px;
+    font-size: large;
+    font-style: italic;
+    color: white;
   }
 
   .introBody {
@@ -34,14 +52,5 @@
     font-size: 10pt;
     margin-left: 5%;
     margin-right: 5%;
-  }
-
-  .socialIcons {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    .icon {
-      margin-left: 25px;
-      margin-right: 25px;
-    }
   }
 }

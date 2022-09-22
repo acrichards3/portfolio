@@ -20,9 +20,4 @@ export const LINKS: Link[] = [
     name: 'About Me',
     url: '/about',
   },
-  {
-    id: 3,
-    name: 'Contact',
-    url: '/contact',
-  },
 ];
