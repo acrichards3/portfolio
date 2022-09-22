@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   .profilePic {
     width: 40%;
@@ -17,6 +17,7 @@
 
   .title {
     font-weight: bold;
+    margin-bottom: none !important;
     font-size: 50px;
     color: white;
   }
