@@ -1,17 +1,32 @@
 @import '../../Variables.scss';
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .title {
-    color: white;
-    letter-spacing: 2px;
-    font-size: 40px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 40px;
 }
 
+.profilePic {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  border: 3px solid;
+}
+
+.body {
+    font-family: $mainFont;
+    font-size: 12pt !important;
+    color: white;
+    font-size: 10pt;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
