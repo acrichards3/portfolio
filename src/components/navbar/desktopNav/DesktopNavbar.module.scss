@@ -4,13 +4,14 @@
   display: flex;
   justify-content: center;
   position: sticky;
-  background-color: $backgroundApp;
+  top: 0px;
+  background-color: $openNav;
   padding: 25px;
 }
 
 .navItem {
   text-decoration: none;
-  background-color: $backgroundApp;
+  background-color: $openNav;
   font-size: xx-large;
   border: none;
   font-family: $mainFont, sans-serif;
@@ -35,6 +36,5 @@
   @extend.navItem;
   a {
       color: $siteBlue !important;
-      font-size: 26px;
   }
 }

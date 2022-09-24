@@ -31,7 +31,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className={styles.row}>
+      <div className={styles.foot}>
         <h2 className={styles.contact}>Stay Connected</h2>
       </div>
       <div className={styles.row}>

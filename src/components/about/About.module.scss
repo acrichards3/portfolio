@@ -11,6 +11,19 @@
     margin-bottom: 2rem;
   }
 
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rowSub {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   .title {
     color: white;
     letter-spacing: 2px;
@@ -31,5 +44,60 @@
     font-size: 10pt;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: $breakpoint) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2rem;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .rowSub {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+  }
+
+  .profilePic {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    margin-right: 5rem;
+    border: 2px solid white;
+  }
+  .title {
+    display: flex;
+    justify-content: right;
+    font-weight: bold;
+    font-size: 55px;
+    color: white;
+  }
+  .subtitle {
+    font-style: italic;
+    color: lightsteelblue;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .body {
+    font-family: $mainFont;
+    font-size: 14pt;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
