@@ -31,7 +31,7 @@ export default function About() {
             is where I really started to learn to code and it was at this point
             where I was able to take what was in my head and turn it into an
             actual piece of software. That was a very big moment for me and ever
-            since then, web development has gotten easier to pick up.
+            since then, web development has become easier to understand.
           </p>
           <div className={styles.rowSub}>
             <h2 className={styles.subtitle}>The Present</h2>
