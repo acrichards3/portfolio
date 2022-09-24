@@ -1,24 +1,26 @@
 @import '../../Variables.scss';
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .card {
-    margin: 5%;
-    background-color: $openNav !important;
-    .cardTitle {
-        color: $siteBlue;
-    }
-    .subtitle {
-        color: lightskyblue;
-    }
-    .cardLink {
-        color: $siteBlue;
-        font-style: italic;
-        text-decoration: underline;
-    }
+  margin: 5%;
+  background-color: $card !important;
+  cursor: auto !important;
+
+  .cardTitle {
+    color: $siteBlue;
+  }
+  .subtitle {
+    color: lightskyblue;
+  }
+  .cardLink {
+    color: $siteBlue;
+    font-style: italic;
+    text-decoration: underline;
+  }
 }

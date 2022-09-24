@@ -24,7 +24,7 @@ export default function Projects() {
   };
 
   const card = (
-    <Card elevation={2} interactive={false} className={styles.card} id={'card'}>
+    <Card elevation={2} interactive={true} className={styles.card} id={'card'}>
       <h1 className={styles.cardTitle}>Title</h1>
       <p className={styles.cardDesc}>
         It is a long established fact that a reader will be distracted by the
