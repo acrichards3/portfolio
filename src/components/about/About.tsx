@@ -30,7 +30,7 @@ export default function About() {
             and Mobile Development Bootcamp where I graduated with honors. This
             is where I really started to learn to code and it was at this point
             where I was able to take what was in my head and turn it into an
-            actual piece of software. That was a very nig moment for me and ever
+            actual piece of software. That was a very big moment for me and ever
             since then, web development has gotten easier to pick up.
           </p>
           <div className={styles.rowSub}>
