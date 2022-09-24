@@ -35,3 +35,38 @@
     }
   }
 }
+
+@media (min-width: $breakpoint) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .card {
+      flex-basis: 40%;
+      margin: 2rem;
+      background-color: $card !important;
+      cursor: auto !important;
+
+      .cardTitle {
+        color: $siteBlue;
+      }
+      .cardDates {
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      .cardSubtitle {
+        color: lightsteelblue;
+      }
+      .cardLink {
+        color: $siteBlue;
+        font-style: italic;
+        text-decoration: underline;
+        font-size: large;
+        font-weight: 400;
+      }
+    }
+  }
+}
