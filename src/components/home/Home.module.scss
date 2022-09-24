@@ -1,5 +1,6 @@
 @import '../../Variables.scss';
 
+// MOBILE
 @media (max-width: $breakpoint) {
   .container {
     display: flex;
@@ -10,17 +11,25 @@
     margin-top: 2rem;
   }
 
+  .row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .socialIcons {
     display: flex;
     justify-content: space-evenly;
     width: 60%;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
   }
 
   .profilePic {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     border: 3px solid white;
   }
@@ -47,10 +56,74 @@
 
   .introBody {
     font-family: $mainFont;
-    font-size: 12pt !important;
+    font-size: 12pt;
     color: white;
-    font-size: 10pt;
     margin-left: 5%;
     margin-right: 5%;
+  }
+}
+
+// DESKTOP
+@media (min-width: $breakpoint) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2rem;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .profilePic {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    margin-right: 5rem;
+    border: 2px solid white;
+  }
+  .title {
+    display: flex;
+    justify-content: right;
+    font-weight: bold;
+    font-size: 55px;
+    color: white;
+  }
+  .subtitle {
+    font-style: italic;
+    color: lightskyblue;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  .contact {
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+  }
+  .body {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    .introBody {
+      font-family: $mainFont;
+      font-size: 12pt;
+      color: white;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+  .socialIcons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 2rem;
   }
 }

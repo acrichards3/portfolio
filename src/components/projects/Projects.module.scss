@@ -1,26 +1,37 @@
 @import '../../Variables.scss';
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.card {
-  margin: 5%;
-  background-color: $card !important;
-  cursor: auto !important;
-
-  .cardTitle {
-    color: $siteBlue;
+@media (max-width: $breakpoint) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
   }
-  .subtitle {
-    color: lightskyblue;
-  }
-  .cardLink {
-    color: $siteBlue;
-    font-style: italic;
-    text-decoration: underline;
+
+  .card {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2rem;
+    background-color: $card !important;
+    cursor: auto !important;
+
+    .cardTitle {
+      color: $siteBlue;
+    }
+    .cardDates {
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .cardSubtitle {
+      color: lightskyblue;
+    }
+    .cardLink {
+      color: $siteBlue;
+      font-style: italic;
+      text-decoration: underline;
+      font-size: large;
+      font-weight: 400;
+    }
   }
 }

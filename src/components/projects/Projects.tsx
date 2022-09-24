@@ -26,6 +26,7 @@ export default function Projects() {
   const card = (
     <Card elevation={2} interactive={true} className={styles.card} id={'card'}>
       <h1 className={styles.cardTitle}>Title</h1>
+      <h3 className={styles.cardDates}>December 2021 - Present</h3>
       <p className={styles.cardDesc}>
         It is a long established fact that a reader will be distracted by the
         readable content of a page when looking at its layout. The point of
@@ -37,7 +38,7 @@ export default function Projects() {
         infancy. Various versions have evolved over the years, sometimes by
         accident, sometimes on purpose (injected humour and the like).
       </p>
-      <h3 className={styles.subtitle}>Technologies Used:</h3>
+      <h3 className={styles.cardSubtitle}>Technologies Used:</h3>
       <ul className={styles.cardTech}>
         <li>React</li>
         <li>Redux</li>
@@ -49,5 +50,5 @@ export default function Projects() {
     </Card>
   );
 
-  return <div className={styles.container}>{card}</div>;
+  return <div className={styles.container}>{card}{card}</div>;
 }
