@@ -21,7 +21,15 @@
   .rowSub {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .subtitle {
+    font-style: italic;
+    color: lightsteelblue;
+    font-size: x-large;
+    letter-spacing: 2px;
   }
 
   .title {
