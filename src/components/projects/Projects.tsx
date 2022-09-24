@@ -1,4 +1,5 @@
 import React from 'react';
+import { projectCard } from './projectCard';
 import { Card } from '@blueprintjs/core';
 import { db } from '../../firebase';
 import { collection, Firestore, getDocs } from 'firebase/firestore';
@@ -30,13 +31,8 @@ export default function Projects() {
 
   const card = (
     <Card elevation={2} interactive={true} className={styles.card} id={'card'}>
-      <div className={styles.row}>
         <h1 className={styles.cardTitle}>Title</h1>
-      </div>
-      <div className={styles.row}>
         <h3 className={styles.cardDates}>December 2021 - Present</h3>
-      </div>
-      <div className={styles.row}>
         <p className={styles.cardDesc}>
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
@@ -48,30 +44,21 @@ export default function Projects() {
           infancy. Various versions have evolved over the years, sometimes by
           accident, sometimes on purpose (injected humour and the like).
         </p>
-      </div>
-      <div className={styles.row}>
         <h3 className={styles.cardSubtitle}>Technologies Used:</h3>
-      </div>
-      <div className={styles.row}>
         <ul className={styles.cardTech}>
           <li>React</li>
           <li>Redux</li>
           <li>TypeScript</li>
           <li>Firebase</li>
         </ul>
-      </div>
-      <div className={styles.row}>
         <h2 className={styles.cardUrl}>Demo: {checkUrl('whatsGood.com')}</h2>
-      </div>
-      <div className={styles.row}>
         <h2 className={styles.cardUrl}>View Repo: {checkUrl('N/A')}</h2>
-      </div>
     </Card>
   );
 
   return (
     <div className={styles.container}>
-      {card}
+      {projectCard('Hello', 'Jan 2021 - Present', 'testing desc', ['firebase', 'JS', 'Redux'], 'igetsnobitches.com', 'N/A', 'thing')}
       {card}
       {card}
       {card}
