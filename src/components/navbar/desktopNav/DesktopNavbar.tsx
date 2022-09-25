@@ -9,7 +9,7 @@ export default function DesktopNavbar() {
   const returnLinks = () => {
     return LINKS.map((link) => {
       return (
-        <button className={ active === link.id ? styles.activeNavItem : styles.navItem}>
+        <button className={ active === link.id ? styles.activeNavItem : styles.navItem} key={link.id}>
           <Link
             to={link.url}
             className={styles.link}
