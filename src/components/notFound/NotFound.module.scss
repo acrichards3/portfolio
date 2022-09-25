@@ -1,23 +1,22 @@
 @import '../../Variables.scss';
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-.title {
-  color: white;
-  font-size: 100px;
-}
-
-.body {
-    font-size: 20px;
+@media (max-width: $breakpoint) {
+    .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    color: white;
+    font-size: 50px;
+  }
+  .body {
+    font-size: 14px;
     margin-bottom: 2rem;
-}
-
-.btn {
+  }
+  .btn {
     font-size: 30px;
     margin: 1rem;
     padding: 7px;
@@ -28,13 +27,52 @@
     background-color: $card;
     transition: 200ms;
     .link {
-        color: white;
-        transition: 200ms;
+      color: white;
+      transition: 200ms;
     }
     .link:hover {
-        color: lightblue;
+      color: lightblue;
     }
-}
-.btn:hover {
+  }
+  .btn:hover {
     border: 1px solid lightblue;
+  }
+}
+
+@media (min-width: $breakpoint) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    color: white;
+    font-size: 100px;
+  }
+
+  
+
+  .btn {
+    font-size: 30px;
+    margin: 1rem;
+    padding: 7px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: $card;
+    transition: 200ms;
+    .link {
+      color: white;
+      transition: 200ms;
+    }
+    .link:hover {
+      color: lightblue;
+    }
+  }
+  .btn:hover {
+    border: 1px solid lightblue;
+  }
 }
