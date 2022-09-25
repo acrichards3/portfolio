@@ -26,6 +26,7 @@
     border-radius: 15px;
     border: 1px solid white;
     background-color: $card;
+    transition: 200ms;
     .link {
         color: white;
         transition: 200ms;
@@ -33,4 +34,7 @@
     .link:hover {
         color: lightblue;
     }
+}
+.btn:hover {
+    border: 1px solid lightblue;
 }
