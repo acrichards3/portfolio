@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card } from '@blueprintjs/core';
 import { db } from '../../firebase';
 import { collection, getDocs } from 'firebase/firestore';
@@ -41,8 +41,6 @@ function useAsyncLoadedData<T>(loader: () => Promise<T>) {
 
 export default function Projects() {
   const asyncProjects = useAsyncLoadedData(getProjects);
-
-  console.log(asyncProjects);
 
   return (
     <div className={styles.container}>

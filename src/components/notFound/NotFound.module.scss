@@ -1,0 +1,36 @@
+@import '../../Variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  font-size: 100px;
+}
+
+.body {
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    font-size: 30px;
+    margin: 1rem;
+    padding: 7px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: $card;
+    .link {
+        color: white;
+        transition: 200ms;
+    }
+    .link:hover {
+        color: lightblue;
+    }
+}
