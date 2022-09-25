@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from '@blueprintjs/core';
 import styles from './Projects.module.scss';
 
-export const projectCard = (
+export const ProjectCard = (
   title: string,
   dates: string,
   desc: string,
@@ -24,6 +24,7 @@ export const projectCard = (
         </a>
       );
     }
+    console.log(url);
     return url;
   };
 
